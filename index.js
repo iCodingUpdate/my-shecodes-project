@@ -5,7 +5,7 @@ function displayTemperature(response) {
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML = temperature;
     let iconNew = document.querySelector(".current-temperature-icon");
-    iconNew.innerHTML = `<img src="${response.data.condition.icon_url}" width="50" height="50">`;
+    iconNew.innerHTML = `<img src="${response.data.condition.icon_url}" width="100" height="100">`;
 
 
 

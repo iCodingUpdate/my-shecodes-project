@@ -6,7 +6,12 @@ function displayTemperature(response) {
     temperatureElement.innerHTML = temperature;
     let iconNew = document.querySelector(".current-temperature-icon");
     iconNew.innerHTML = `<img src="${response.data.condition.icon_url}" width="100" height="100">`;
-
+    let clouds = document.querySelector(".status-cloud");
+    clouds.innerHTML = `${response.data.condition.description}`;
+    let humidity = document.querySelector("#current-humidity");
+    humidity.innerHTML = `${response.data.temperature.humidity}%`;
+    let wind = document.querySelector("#current-wind");
+    wind.innerHTML = `${response.data.wind.speed}km/h`;
 
 
 

@@ -48,6 +48,7 @@ body {
   
   .current-temperature {
     font-size: 48px;
+    display: flex;
   }
   
   .current-weather {
@@ -85,8 +86,6 @@ body {
   
   .current-temperature-unit {
     font-size: 28px;
-    position: relative;
-    top: -38px;
   }
   
   footer {
